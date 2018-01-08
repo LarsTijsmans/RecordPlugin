@@ -80,7 +80,7 @@ public class FileManager {
      * @return the file directory
      */
     private File getFileDirectory() {
-        File tempFile = Environment.getExternalStorageDirectory().getAbsolutePath();
+        File tempFile = Environment.getExternalStorageDirectory();
         //File tempFile = new File(getFilesDir().getAbsolutePath());
 
         File audioPath = new File(tempFile, FOLDER_NAME_SAVE_AUDIO);
