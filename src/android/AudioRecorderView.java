@@ -87,9 +87,9 @@ public class AudioRecorderView extends RelativeLayout {
                 mRecorder.setOutputFormat(OUTPUT_FORMAT);
 
 // Generate file name and get the path to save the files
-                FileManager fileManager = new FileManager(getContext());
-                fileName = fileManager.createFileName(EXTENSION_FILE);
-                filePath = fileManager.getFileName(fileName);
+                //FileManager fileManager = new FileManager(getContext());
+                fileName = test123.wav
+                filePath = android.os.Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + fileName;
 
                 mRecorder.setOutputFile(filePath);
                 mRecorder.setAudioEncoder(AUDIO_ENCODER);
