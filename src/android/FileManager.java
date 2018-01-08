@@ -80,9 +80,9 @@ public class FileManager {
      * @return the file directory
      */
     private File getFileDirectory() {
-        File tempFile = new File(android.os.Environment.getExternalStorageDirectory().getAbsolutePath());
+        //File tempFile = new File(android.os.Environment.getExternalStorageDirectory().getAbsolutePath());
         //File tempFile = new File(getFilesDir().getAbsolutePath());
-
+        File tempFile = new File(mContext.getFilesDir().getAbsolutePath());
         File audioPath = new File(tempFile, FOLDER_NAME_SAVE_AUDIO);
 
         if (audioPath.mkdir())
